@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Smythe&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+ <header>
+  <div class="header-design">
+    <img id = "couple3"src="./images/couple3.png"/>
+    <div class ="title">
+    <p>어버이날 기념 이벤트</p>
+    <br/>
+    <h1>한국실버교육협회 워크북 퀴즈</h1>
+  </div>
+  </div> 
+ </header>
+
+<main>
+  <h2>자신에게 맞는 워크북을 선택해 보세요.</h2>
+  <div class= "container">
+    <div class= "workbook1" id="workbook1-radios">
+      <p class = "Q1"> 1. 어떤 책을 만들고 싶으신가요?</p>
+      <input type="radio" class="btn" id="bk-c1-btn" name="book" value="life-story">
+        <label for="bk-c1-btn"><span>&#9312 인생 스토리북</span></label>
+      <input type="radio"  class="btn" id="bk-c2-btn" name="book" value="memory-story">
+      <label for="bk-c2-btn"><span> &#9313 추억 스토리북</span></label>
+      <input type="radio"  class="btn" id="bk-c3-btn" name="book" value="life&memory-story">
+      <label for="bk-c3-btn"><span> &#9314 인생과 추억 스토리북</span></label>
+      <input type="radio" class="btn" id="bk-c4-btn" name="book" value="biography">
+      <label for="bk-c4-btn"><span> &#9315 자서전</span></label>
+
+    <div class= "workbook2" id="workbook2-radios">
+      <p class = "Q2">
+        2. 어떤 카드놀이를 하고 싶으신가요?</p>
+      <p class = "C1"> &#9312 감정카드놀이</p>
+      <input type="radio" name="card" value="emotion-card"/>
+       <p class = "C2"> &#9313 사진카드놀이</p>
+      <input type="radio" name="card" value="memory-card"/>
+        <p class = "C3"> &#9314 추억카드놀이</p>
+      <input type="radio" name="book" value="remember-card"/>
+        <p class = "C4"> &#9315 회상카드놀이</p>
+      <input type="radio" name="book" value="biography"/>  
+    </div>
+
+    <div class= "workbook3" id="workbook3-radios">
+      <p class = "Q3">
+        3. 어떤 퀴즈놀이를 하고 싶으신가요?</p>
+      <p class = "C1"> &#9312 단어퀴즈놀이</p>
+      <input type="radio" name="book" value="word-quiz"/>
+       <p class = "C2"> &#9313 추억퀴즈놀이</p>
+      <input type="radio" name="book" value="memory-quiz"/>
+        <p class = "C3"> &#9314 추억퀴즈놀이2</p>
+      <input type="radio" name="book" value="memory2-quiz"/>
+        <p class = "C4"> &#9315 속담퀴즈놀이</p>
+      <input type="radio" name="book" value="proverb-quiz"/>  
+    </div>
+  
+    <div class= "workbook4" id="workbook4-radios">
+      <p class = "Q4">
+        4. 어떤 그림을 색칠하고 싶으신가요?</p>
+      <p class = "C1"> &#9312 음식색칠도안</p>
+      <input type="radio" name="book" value="food-coloring"/>
+       <p class = "C2"> &#9313 꽃색칠도안</p>
+      <input type="radio" name="book" value="flower-coloring"/>
+        <p class = "C3"> &#9314 전통그림도안</p>
+      <input type="radio" name="book" value="tradition-coloring"/>
+        <p class = "C4"> &#9315 동물그림도안</p>
+      <input type="radio" name="book" value="animal-coloring"/>  
+    </div>
+
+    <div class= "workbook5" id="workbook5-radios">
+      <p class = "Q5">
+        5. 어떤 퍼즐을 맞추고 싶으신가요?</p>
+      <p class = "C1"> &#9312 전통혼례퍼즐</p>
+      <input type="radio" name="book" value="wedding-puzzle"/>
+       <p class = "C2"> &#9313 십장생도퍼즐</p>
+      <input type="radio" name="book" value="longevity-puzzle"/>
+        <p class = "C3"> &#9314 다람쥐퍼즐</p>
+      <input type="radio" name="book" value="squirrel-puzzle"/>
+        <p class = "C4"> &#9315 조충도퍼즐</p>
+      <input type="radio" name="book" value="jochungdo-puzzle"/>  
+    </div>
+
+    <div class="gifs-check">
+      <label for="gifs-only-option" class="gifs-check-label">
+        Only WorkBook</label>
+      <input type="checkbox" id="gifs-only-option" />
+  </div>
+  <button class="get-image-btn" id="get-image-btn">결과보기</button>
+  </div>
+</main>
+
+<div class="workbook-modal" id="workbook-modal">
+  <button class="workbook-modal-close-btn" id="workbook-modal-close-btn">X</button>
+<div id="workbook-modal-inner"></div>
+</div>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
