@@ -103,9 +103,10 @@ input[type="radio"] {
    height: 20px;
    cursor: pointer;
    transition: all 0.3s;
+   border: 2px solid rgb(59, 59, 59);
 }  
 
-input[type="radio"]:checked + .change {
+input[type="radio"]:checked {
   background-color: rgb(105, 39, 180);
   color:black;
   border: 2px solid rgb(105, 39, 180);
@@ -173,4 +174,12 @@ input[type="radio"]:checked + .change {
   color: white;
   background-color: #bd301d;
   border: 2px solid #bd301d;
+}
+
+workbook-modal {
+  background-color: rgba(102, 197, 102, 0.548);
+}
+
+.workbook-modal.on {
+  display: block;
 }

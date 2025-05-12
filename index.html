@@ -81,23 +81,38 @@
     <div class= "workbook5" id="workbook5-radios">
       <p class = "Q5">5. 어떤 퍼즐을 맞추고 싶으신가요?</p>
       <br/>
-      <input type="radio" class="btn" id="pz-e1-btn" name="book" value="wedding-puzzle"/>
+      <input type="radio" class="btn" id="pz-e1-btn" name="puzzle" value="wedding-puzzle"/>
        <label for="pz-e1-btn"><span class="change">&#9312 전통혼례퍼즐</span></label>
-      <input type="radio" class="btn" id="pz-e2-btn" name="book" value="longevity-puzzle"/>
+      <input type="radio" class="btn" id="pz-e2-btn" name="puzzle" value="longevity-puzzle"/>
        <label for="pz-e2-btn"><span class="change">&#9313 십장생도퍼즐</span></label>
-      <input type="radio" class="btn" id="pz-e3-btn" name="book" value="squirrel-puzzle"/>
+      <input type="radio" class="btn" id="pz-e3-btn" name="puzzle" value="squirrel-puzzle"/>
        <label for="pz-e3-btn"><span class="change">&#9314 다람쥐퍼즐</span></label>
-      <input type="radio" class="btn" id="pz-e4-btn" name="book" value="jochungdo-puzzle"/>
+      <input type="radio" class="btn" id="pz-e4-btn" name="puzzle" value="jochungdo-puzzle"/>
         <label for="pz-e4-btn"><span class="change">&#9315 조충도퍼즐</span></label>
     </div>
 
-  <button class="get-image-btn" id="get-image-btn">결과보기</button>
+  <button class="get-image-btn" id="get-image-btn" onclick="clickresult()">결과보기</button>
 </main>
 
 <div class="workbook-modal" id="workbook-modal">
   <button class="workbook-modal-close-btn" id="workbook-modal-close-btn">X</button>
 <div id="workbook-modal-inner"></div>
 </div>
+
+<div class="modal_result" id="modal_result">
+  <p id="score"></p>
+
+  <form id="prize">
+  <h2 class="prize_title">✔ 경품응모하기</h2>
+
+  <label><span>이름 : </span><input type="text" aria-label="Full name" id="name" placeholder="성함"/>
+  <label><span>이메일 : </span><input type="email" id="email" placeholder="이메일"/> 
+  <label><span>전화번호 : </span><input type="number" id="number" placeholder="핸드폰 번호"/>
+      
+  <div class="submit" id="submit">
+    <button class="sumit-btn" type="submit">제출</button>
+  </div>
+</form>
 
     <script src="./index.mjs" type="module"></script>
   </body>
