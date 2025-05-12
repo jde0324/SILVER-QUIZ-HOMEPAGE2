@@ -44,12 +44,17 @@ h1 {
     margin-top: 0px;
 }
 
+main {
+   background-color: rgba(255, 217, 0, 0.363);
+}
+
 h2 {
   font-family: "Merriweather", sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 28px;
   color: rgb(105, 39, 180);
-  margin: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -59,73 +64,75 @@ h2 {
   margin: 0px auto;
   }
 
-span {
-  font-weight: 600;
-  font-size: 20px;
-  color: black;
-}
-
-/* .workbook1 {
-  border-bottom: 3px, solid black;
-} */
+  .workbook1, .workbook2, .workbook3, .workbook4, .workbook5 {
+    border-bottom: 2px solid rgb(63, 63, 63);
+  }  
 
 .radio{
-    display: flex;
+    display: block;
     align-items: center;
     border-bottom: 1px solid #bcbcbc;
     padding: 4px 8px;
 }
 
+label{
+  display: inline-block;
+  background-color: rgba(102, 197, 102, 0.548);
+  padding: 5px 15px;
+  width: auto;
+  height: 30px;
+  border: 2px solid rgb(63, 63, 63);
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  }
+
+
+  
 input[type="radio"] {
-  appearance: none;
-  border-radius: 50%;
-  box-sizing: border-box;
-  width: 20px;
-  height: 20px;
-  margin-bottom: 10px;
-  cursor: pointer;
+  display: none; 
+}
+
+.change {
+   /* background-color:  rgb(105, 39, 180); */
+   border-radius: 30%;
+   box-sizing: border-box;
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+   transition: all 0.3s;
+}  
+
+input[type="radio"]:checked + .change {
+  background-color: rgb(105, 39, 180);
+  color:black;
+  border: 2px solid rgb(105, 39, 180);
+}
+
+.Q1, .Q2, .Q3, .Q4, .Q5 {
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(1, 136, 1);
 }
 
 .btn {
   opacity: 0;
+  color: black;
 }
-
-label{
-  display: inlin-block;
-    padding: 5px 15px;
-    width: 100px;
-    height: 40px;
-    
-    border: 1px solid gray;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    line-height: 1.4;
-  }
-
-
 
 .get-image-btn {
-  width: 160px;
-  height: 60px;
   background-color: rgb(105, 39, 180);
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
+  width: 200px;
+  height: 60px;
+  border: 3px solid rgb(105, 39, 180);
+  border-radius: 30px;
+  font-weight: 700;
   font-size: 30px;
   color: white;
-}
-
-.books-check{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 16px;
-}
-
-.books-check-label{
-  width: unset;
-  margin-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .workbook-modal{

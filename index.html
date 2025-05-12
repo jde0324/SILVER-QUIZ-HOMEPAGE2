@@ -24,78 +24,74 @@
  </header>
 
 <main>
-  <h2>자신에게 맞는 워크북을 선택해 보세요.</h2>
   <div class= "container">
+  <h2>자신에게 맞는 워크북을 선택해 보세요.</h2>
     <div class= "workbook1" id="workbook1-radios">
       <p class = "Q1"> 1. 어떤 책을 만들고 싶으신가요?</p>
-      <input type="radio" class="btn" id="bk-c1-btn" name="book" value="life-story">
-        <label for="bk-c1-btn"><span>&#9312 인생 스토리북</span></label>
-      <input type="radio"  class="btn" id="bk-c2-btn" name="book" value="memory-story">
-      <label for="bk-c2-btn"><span> &#9313 추억 스토리북</span></label>
-      <input type="radio"  class="btn" id="bk-c3-btn" name="book" value="life&memory-story">
-      <label for="bk-c3-btn"><span> &#9314 인생과 추억 스토리북</span></label>
-      <input type="radio" class="btn" id="bk-c4-btn" name="book" value="biography">
-      <label for="bk-c4-btn"><span> &#9315 자서전</span></label>
+       <br/>
+      <input type="radio" class="btn" id="bk-a1-btn" name="book" value="life-story"/>
+        <label for="bk-a1-btn"><span class="change">&#9312 인생 스토리북</span></label>
+      <input type="radio" class="btn" id="bk-a2-btn" name="book" value="memory-story"/>
+      <label for="bk-a2-btn"><span class="change">&#9313 추억 스토리북</span></label>
+      <input type="radio" class="btn" id="bk-a3-btn" name="book" value="life&memory-story"/>
+      <label for="bk-a3-btn"><span class="change">&#9314 인생의 추억 스토리북</span></label>
+      <input type="radio" class="btn" id="bk-a4-btn" name="book" value="biography-story"/>
+      <label for="bk-a4-btn"><span class="change">&#9315 자서전</span></label>
+     </div> 
 
     <div class= "workbook2" id="workbook2-radios">
-      <p class = "Q2">
-        2. 어떤 카드놀이를 하고 싶으신가요?</p>
-      <p class = "C1"> &#9312 감정카드놀이</p>
-      <input type="radio" name="card" value="emotion-card"/>
-       <p class = "C2"> &#9313 사진카드놀이</p>
-      <input type="radio" name="card" value="memory-card"/>
-        <p class = "C3"> &#9314 추억카드놀이</p>
-      <input type="radio" name="book" value="remember-card"/>
-        <p class = "C4"> &#9315 회상카드놀이</p>
-      <input type="radio" name="book" value="biography"/>  
+      <p class = "Q2">2. 어떤 카드놀이를 하고 싶으신가요?</p>
+       <br/>
+      <input type="radio" class="btn" id="cd-b1-btn" name="book" value="emotion-card"/>
+       <label for="cd-b1-btn"><span class="change">&#9312 감정카드놀이</span></label>
+      <input type="radio" class="btn" id="cd-b2-btn" name="book" value="photo-card"/>
+       <label for="cd-b2-btn"><span class="change">&#9313 사진카드놀이</span></label>
+      <input type="radio" class="btn" id="cd-b3-btn" name="book" value="memory-card"/>
+       <label for="cd-b3-btn"><span class="change">&#9314 추억카드놀이</span></label>
+      <input type="radio" class="btn" id="cd-b4-btn" name="book" value="remember-card"/>
+       <label for="cd-b4-btn"><span class="change">&#9315 회상카드놀이</span></label> 
     </div>
 
     <div class= "workbook3" id="workbook3-radios">
-      <p class = "Q3">
-        3. 어떤 퀴즈놀이를 하고 싶으신가요?</p>
-      <p class = "C1"> &#9312 단어퀴즈놀이</p>
-      <input type="radio" name="book" value="word-quiz"/>
-       <p class = "C2"> &#9313 추억퀴즈놀이</p>
-      <input type="radio" name="book" value="memory-quiz"/>
-        <p class = "C3"> &#9314 추억퀴즈놀이2</p>
-      <input type="radio" name="book" value="memory2-quiz"/>
-        <p class = "C4"> &#9315 속담퀴즈놀이</p>
-      <input type="radio" name="book" value="proverb-quiz"/>  
+      <p class = "Q3">3. 어떤 퀴즈놀이를 하고 싶으신가요?</p>
+       <br/>
+      <input type="radio" class="btn" id="qz-c1-btn" name="book" value="word-quiz"/>
+       <label for="qz-c1-btn"><span class="change">&#9312 단어퀴즈놀이</span></label>
+      <input type="radio" class="btn" id="qz-c2-btn" name="book" value="memory-quiz"/>
+        <label for="qz-c2-btn"><span class="change">&#9313 추억퀴즈놀이</span></label>
+      <input type="radio" class="btn" id="qz-c3-btn" name="book" value="memory2-quiz"/>
+       <label for="qz-c3-btn"><span class="change">&#9314 추억퀴즈놀이2</span></label>
+      <input type="radio" class="btn" id="qz-c4-btn" name="book" value="proverb-quiz"/> 
+       <label for="qz-c4-btn"><span class="change">&#9315 속담퀴즈놀이</span></label>
     </div>
   
-    <div class= "workbook4" id="workbook4-radios">
-      <p class = "Q4">
-        4. 어떤 그림을 색칠하고 싶으신가요?</p>
-      <p class = "C1"> &#9312 음식색칠도안</p>
-      <input type="radio" name="book" value="food-coloring"/>
-       <p class = "C2"> &#9313 꽃색칠도안</p>
-      <input type="radio" name="book" value="flower-coloring"/>
-        <p class = "C3"> &#9314 전통그림도안</p>
-      <input type="radio" name="book" value="tradition-coloring"/>
-        <p class = "C4"> &#9315 동물그림도안</p>
-      <input type="radio" name="book" value="animal-coloring"/>  
+      <div class= "workbook4" id="workbook4-radios">
+      <p class = "Q4">4. 어떤 그림을 색칠하고 싶으신가요?</p>
+       <br/>
+      <input type="radio" class="btn" id="cl-d1-btn" name="book" value="food-coloring"/>
+       <label for="cl-d1-btn"><span class="change">&#9312 음식색칠도안</span></label>
+      <input type="radio" class="btn" id="cl-d2-btn" name="book" value="flower-coloring"/>
+       <label for="cl-d2-btn"><span class="change">&#9313 꽃색칠도안</span></label>
+      <input type="radio" class="btn" id="cl-d3-btn" name="book" value="tradition-coloring"/>
+        <label for="Cl-d3-btn"><span class="change">&#9314 전통그림도안</span></label> 
+      <input type="radio" class="btn" id="cl-d4-btn" name="book" value="animal-coloring"/>  
+       <label for="Cl-d4-btn"><span class="change">&#9315 동물그림도안</span></lbel>
     </div>
 
     <div class= "workbook5" id="workbook5-radios">
-      <p class = "Q5">
-        5. 어떤 퍼즐을 맞추고 싶으신가요?</p>
-      <p class = "C1"> &#9312 전통혼례퍼즐</p>
-      <input type="radio" name="book" value="wedding-puzzle"/>
-       <p class = "C2"> &#9313 십장생도퍼즐</p>
-      <input type="radio" name="book" value="longevity-puzzle"/>
-        <p class = "C3"> &#9314 다람쥐퍼즐</p>
-      <input type="radio" name="book" value="squirrel-puzzle"/>
-        <p class = "C4"> &#9315 조충도퍼즐</p>
-      <input type="radio" name="book" value="jochungdo-puzzle"/>  
+      <p class = "Q5">5. 어떤 퍼즐을 맞추고 싶으신가요?</p>
+      <br/>
+      <input type="radio" class="btn" id="pz-e1-btn" name="book" value="wedding-puzzle"/>
+       <label for="pz-e1-btn"><span class="change">&#9312 전통혼례퍼즐</span></label>
+      <input type="radio" class="btn" id="pz-e2-btn" name="book" value="longevity-puzzle"/>
+       <label for="pz-e2-btn"><span class="change">&#9313 십장생도퍼즐</span></label>
+      <input type="radio" class="btn" id="pz-e3-btn" name="book" value="squirrel-puzzle"/>
+       <label for="pz-e3-btn"><span class="change">&#9314 다람쥐퍼즐</span></label>
+      <input type="radio" class="btn" id="pz-e4-btn" name="book" value="jochungdo-puzzle"/>
+        <label for="pz-e4-btn"><span class="change">&#9315 조충도퍼즐</span></label>
     </div>
 
-    <div class="gifs-check">
-      <label for="gifs-only-option" class="gifs-check-label">
-        Only WorkBook</label>
-      <input type="checkbox" id="gifs-only-option" />
-  </div>
   <button class="get-image-btn" id="get-image-btn">결과보기</button>
-  </div>
 </main>
 
 <div class="workbook-modal" id="workbook-modal">
