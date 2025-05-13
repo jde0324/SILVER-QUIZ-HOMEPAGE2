@@ -40,7 +40,7 @@ function clickresult() {
   let totalCount = 0;
 
   for (let question in answers) {
-    const selected = document.querySelector(input[name="${question}"]:checked);
+    const selected = document.querySelector(input[?="${question}"]:checked);
     if (selected && selected.value === answers[question]) {
       totalCount++;
     }
