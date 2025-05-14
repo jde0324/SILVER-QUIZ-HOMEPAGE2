@@ -103,10 +103,10 @@ input[type="radio"] {
    border: 2px;
 }  
 
-input[type="radio"]:checked {
-  background-color: rgb(105, 39, 180);
+input[type="radio"]:checked +.book, .card, .quiz, .coloring, .puzzle {
+  background-color: rgb(134, 71, 206);
   color:black;
-  border: 2px solid rgb(105, 39, 180);
+  border: 2px solid rgb(134, 71, 206);
 }
 
 .Q1, .Q2, .Q3, .Q4, .Q5 {
@@ -133,11 +133,27 @@ input[type="radio"]:checked {
   margin-bottom: 15px;
 }
 
+/* .get-image-btn:hover {
+  color: black;
+  background-color: #bd301d;
+  border: 2px solid #bd301d; */
+
 .form-box {
-  display: block;
+  display: none;
+  position: fixed;
   background-color: rgba(161, 216, 161, 0.89);
   width: 80%;
   margin: 0px auto;
+  top: 60px;
+  left: 60px;
+  height: 500px;
+  align-items: center;
+}
+
+#prize {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .prize-title {
@@ -183,35 +199,27 @@ input {
   font-weight: 700;
   font-size: 25px;
   color: black;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px 0px;
 }
 
 .submit-btn:hover {
   color: black;
   background-color: #bd301d;
   border: 2px solid #bd301d;
-
-  .modal-close{
-  display: none; /*flex when displayed*/
-  position: fixed;
-  margin: auto;
-  top: 80px;
-  left: 0;
-  right: 0;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #67595e;
-  border-radius: 5px;
-  width: 420px;
-  height: 490px;
-  background-color: #fff0ee;
 }
 
-.book-img{
-  max-width: 340px;
-  max-height: 420px;
+  .modal-close{
+  position: fixed;
+  margin: auto;
+  top; 10;
+  left: 50;
+  display: flex;
+  align-items:left;
+  border: 2px solid #bd301d;
   border-radius: 5px;
+  width: 72px;
+  height: 37px;
+  background-color: white;
 }
 
 .close-btn{
@@ -220,7 +228,8 @@ input {
   border-style: none;
   color:black;
   padding: 2px 6px;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .close-btn:hover{
@@ -230,7 +239,7 @@ input {
 }
 
 modal-close {
-  background-color: rgba(102, 197, 102, 0.548);
+  background-color: rgb(101, 185, 101);
 }
 
 .modal-close.on {

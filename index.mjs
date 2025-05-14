@@ -2,45 +2,45 @@ import { booksData } from "./data.js";
 
 const workbookRadios = document.getElementById("workbook-radios");
 const getImageBtn = document.getElementById("get-image-btn");
-const workbookModal = document.getElementById("workbook-modal");
-const workbookModalInner = document.getElementById("workbook-modal-inner");
-const workbookModalCloseBtn = document.getElementById("workbook-modal-close-btn");
-const prize = document.getElementById("prize");
+const ModalClose = document.getElementById("modal-close");
+const modalInner = document.getElementById("modal-inner");
+const closeBtn = document.getElementById("close-btn");
+const formBox = document.querySelector(".form-box");
 
-workbookModalCloseBtn.addEventListener("click", closeModal);
-function closeModal() {
-  workbookModal.style.display = "none";
-}
-
-// Btn.addEventListner("click", function() {
-//   workbookModal.classList.add('on');
-// });
-
-getImageBtn.addEventListener("click", function() {
-  getImageBtn.style.background = "rgb(218, 52, 2)";
-   workbookModal.classList.add('on');
+closeBtn.addEventListener("click", function (){
+    console.log ();
+     formBox.style.display = "none";
 });
 
-Btn.addEventListener("click", function() {
-  Btn.style.background = "rgb(105, 39, 180)";
+
+// Btn.addEventListner("click", function() {
+//    ModalClose.classList.add('on');
+//  });
+
+getImageBtn.addEventListener("click", function() {
+  formBox.style.display = "block";
+});
+
+submitBtn.addEventListener("click", function() {
+  submitBtn.style.background = "rgb(218, 52, 2)";
 });
 
 function clickresult() {
   let score = 0;
-  const toTalscore = 20;
+  const toTalscore = 10;
 
   const answers = {
     book: "biography-story",
-    // card: "remember-card",
-    // quiz: "proverb-quiz",
-    // coloring: "animal-coloring",
+    card: "remember-card",
+    quiz: "proverb-quiz",
+    coloring: "tradition-coloring",
     puzzle: "wedding-puzzle"
   };
 
   let totalCount = 0;
-
+  
   for (let question in answers) {
-    const selected = document.querySelector(input[?="${question}"]:checked);
+    const selected = document.querySelector(`input[name="${question}"]:checked`);
     if (selected && selected.value === answers[question]) {
       totalCount++;
     }
