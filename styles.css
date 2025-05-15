@@ -68,6 +68,12 @@ h2 {
     border-bottom: 2px solid rgb(63, 63, 63);
   }  
 
+.Q1, .Q2, .Q3, .Q4, .Q5 {
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(1, 136, 1);
+}
+
 .radio{
     display: block;
     align-items: center;
@@ -92,6 +98,12 @@ input[type="radio"] {
   display: none; 
 }
 
+input[type="radio"]:checked {
+  background-color: rgb(134, 71, 206);
+  color:black;
+  border: 2px solid rgb(134, 71, 206);
+}
+
 .choice {
    /* background-color:  rgb(105, 39, 180); */
    border-radius: 30%;
@@ -103,22 +115,17 @@ input[type="radio"] {
    border: 2px;
 }  
 
-input[type="radio"]:checked +.book, .card, .quiz, .coloring, .puzzle {
-  background-color: rgb(134, 71, 206);
-  color:black;
-  border: 2px solid rgb(134, 71, 206);
+.choice:hover {
+  color:white;
+  background-color: #db432f;
+  border: 2px solid #db432f;
 }
 
-.Q1, .Q2, .Q3, .Q4, .Q5 {
-  font-weight: 700;
-  font-size: 25px;
-  color: rgb(1, 136, 1);
-}
-
-.btn {
+.radio-btn {
   opacity: 0;
   color: black;
 }
+
 
 .get-image-btn {
   background-color: rgb(105, 39, 180);
@@ -204,22 +211,15 @@ input {
 
 .submit-btn:hover {
   color: black;
-  background-color: #bd301d;
-  border: 2px solid #bd301d;
+  background-color: #db432f;
+  border: 2px solid #db432f;
 }
 
   .modal-close{
   position: fixed;
   margin: auto;
-  top; 10;
-  left: 50;
-  display: flex;
-  align-items:left;
-  border: 2px solid #bd301d;
-  border-radius: 5px;
   width: 72px;
   height: 37px;
-  background-color: white;
 }
 
 .close-btn{
@@ -234,8 +234,8 @@ input {
 
 .close-btn:hover{
   color: white;
-  background-color: #bd301d;
-  border: 2px solid #bd301d;
+  background-color: #db432f;
+  border: 2px solid #db432f;
 }
 
 modal-close {

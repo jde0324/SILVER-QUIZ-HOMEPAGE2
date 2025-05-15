@@ -22,7 +22,7 @@ getImageBtn.addEventListener("click", function() {
 });
 
 submitBtn.addEventListener("click", function() {
-  submitBtn.style.background = "rgb(218, 52, 2)";
+  submitBtn.style.background = "rgb(219, 79, 37)";
 });
 
 function clickresult() {
