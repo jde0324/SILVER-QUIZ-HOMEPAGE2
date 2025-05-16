@@ -81,6 +81,10 @@ h2 {
     padding: 4px 8px;
 }
 
+.radio-input-btn input[type=radio] {
+  display: none;
+}
+
 label{
   display: inline-block;
   background-color: rgba(102, 197, 102, 0.548);
@@ -94,18 +98,22 @@ label{
   margin-bottom: 15px;
   }
  
-input[type="radio"] {
-  display: none; 
+.radio-input-btn input[type=radio]:checked + label {
+  background-color: #db432f;
+  border: 2px solid #db432f;
+  color: white;
 }
 
-input[type="radio"]:checked {
-  background-color: rgb(134, 71, 206);
-  color:black;
-  border: 2px solid rgb(134, 71, 206);
+.radio-input-btn label:hover {
+  color: white;
+}
+
+.radio-input-btn input[type=radio] + label {
+  background: rgba(102, 197, 102, 0.548);
+  color: black;
 }
 
 .choice {
-   /* background-color:  rgb(105, 39, 180); */
    border-radius: 30%;
    box-sizing: border-box;
    width: 20px;
@@ -115,17 +123,15 @@ input[type="radio"]:checked {
    border: 2px;
 }  
 
-.choice:hover {
+ /* .choice:hover {
   color:white;
   background-color: #db432f;
   border: 2px solid #db432f;
-}
+}  */
 
 .radio-btn {
   opacity: 0;
-  color: black;
 }
-
 
 .get-image-btn {
   background-color: rgb(105, 39, 180);
@@ -140,10 +146,11 @@ input[type="radio"]:checked {
   margin-bottom: 15px;
 }
 
-/* .get-image-btn:hover {
+.get-image-btn:hover {
   color: black;
-  background-color: #bd301d;
-  border: 2px solid #bd301d; */
+  background-color: #db432f;
+  border: 2px solid #db432f;
+}
 
 .form-box {
   display: none;
@@ -158,7 +165,7 @@ input[type="radio"]:checked {
 }
 
 #prize {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -210,7 +217,7 @@ input {
 }
 
 .submit-btn:hover {
-  color: black;
+  color: white;
   background-color: #db432f;
   border: 2px solid #db432f;
 }
@@ -238,10 +245,21 @@ input {
   border: 2px solid #db432f;
 }
 
-modal-close {
+.modal-close {
   background-color: rgb(101, 185, 101);
 }
 
-.modal-close.on {
+.on {
   display: block;
 }
+
+#score {
+  display: flex;
+  position: fixed;
+  margin: 100px 50px;
+  color: black;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+

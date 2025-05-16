@@ -1,4 +1,3 @@
-import { booksData } from "./data.js";
 
 const workbookRadios = document.getElementById("workbook-radios");
 const getImageBtn = document.getElementById("get-image-btn");
@@ -6,23 +5,32 @@ const ModalClose = document.getElementById("modal-close");
 const modalInner = document.getElementById("modal-inner");
 const closeBtn = document.getElementById("close-btn");
 const formBox = document.querySelector(".form-box");
+const score = document.getElementById("score");
+const prize = document.getElementById("prize");
+
+
+getImageBtn.addEventListener("click", function() {
+  formBox.classList.add('on');
+  clickresult ();
+  
+  setTimeout(function () {
+  prize.style.display="flex";
+  score.style.display="none";
+  }, 1500);
+
+  });
 
 closeBtn.addEventListener("click", function (){
     console.log ();
      formBox.style.display = "none";
 });
 
-
-// Btn.addEventListner("click", function() {
-//    ModalClose.classList.add('on');
-//  });
-
-getImageBtn.addEventListener("click", function() {
-  formBox.style.display = "block";
-});
+closeBtn.addEventListener("click", function() {
+   formBox.style.display = "block";
+ });
 
 submitBtn.addEventListener("click", function() {
-  submitBtn.style.background = "rgb(219, 79, 37)";
+  formBox.style.dispaly + "none";
 });
 
 function clickresult() {
@@ -51,5 +59,4 @@ function clickresult() {
   document.getElementById("score").innerText =
     `점수: ${score}점 
     (정답 ${totalCount}개 
-    / 5문제)`;
-}
+    / 5문제)`};
